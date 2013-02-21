@@ -34,5 +34,15 @@ github "ruby",     "1.0.0"
 github "stdlib",   "3.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",     "1.0.0"
 
+include homebrew
+
+# Declaring a custom package formula, and installing package
+
+class repo {
+  homebrew::formula {
+    'repo': ;
+  }
+}
+
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
